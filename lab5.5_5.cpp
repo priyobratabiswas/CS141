@@ -1,4 +1,4 @@
-// To create a c++ programme which displays a hollow square of stars.
+// To create a c++ programme which displays a rhombus (parallelogram) of stars.
 // include the library
 #include<iostream>
 #include<cstring>
@@ -12,7 +12,7 @@ int main ()
 	cout<<"Hello, what's your name?"<<endl;
 	cin>>name;
 	cout<<"welcome "<<name<<" sir"<<endl;
-	cout<<"lets get started, we will be drawing hollow squares of stars."<<endl;
+	cout<<"lets get started, we will be drawing rhombus (parallelogram) of stars."<<endl;
 //start the process for making squares
 //declare the variables
 	int i,j,n;
