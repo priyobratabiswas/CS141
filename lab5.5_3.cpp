@@ -12,7 +12,7 @@ int main ()
 	cout<<"Hello, what's your name?"<<endl;
 	cin>>name;
 	cout<<"welcome "<<name<<" sir"<<endl;
-	cout<<"lets get started, we will be drawing hollow squares of stars."<<endl;
+	cout<<"lets get started, we will be drawing hollow squares with diagonals of stars."<<endl;
 //start the process for making a hollow square with diagonals
 //enter the value of side stars
 	int n;
