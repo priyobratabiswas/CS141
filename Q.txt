@@ -1,0 +1,142 @@
+1.//
+(1)9772
+2. T
+3.6940
+4. S
+5.9772
+2.//statement D. *p=75.
+3.// the error is in assigning pointer type. A character is a Special element which can be only pointed with the help of a character pointer and not with the help of a double pointer. Pointing a character with a double pointer is not well defined.
+4.// 
+A
+C
+B
+A
+4435
+B
+C
+4434
+B
+C
+C
+C
+
+5.// the code
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    char s[10] = "abcde";
+    char* cptr;
+    cptr=s;
+    int n=4;
+    while(n>=0)
+   {    cout<<*(cptr+n);
+        n--;}
+   return 0;
+}
+//6.Write a function countEven(int*, int) which receives an integer array and its size, and returns the number of even numbers in the array. 
+int countEven(int*a,int n)
+{
+	int k=0;
+	for(int i=0;i<n;i++)
+	{
+		if(a[i]%2==0)
+		{
+			k++;
+		}
+	}
+	return k;
+
+}
+//7.
+double* maximum(double* a,int size)
+{
+
+	double* m=a;
+	for(int i=1;i<size;i++)
+	if(*(a+i)>*m)
+	m=a+i;
+	return m;
+}
+BUT SIR I CAN’T FIGURE OUT HOW TO RETURN NULL FOR EMPTY ARRAY
+My idea is
+double* maximum(double* a,int size)
+{
+    if(size==0)
+   { return NULL;}
+    else{
+	double* m=a;
+	for(int i=1;i<size;i++)
+	if(*(a+i)>*m)
+	m=a+i;
+	return m;}
+}
+//8.
+#include <iostream>
+
+using namespace std;
+
+int myStrLen(char*ptr)
+{
+    int i=0;
+    char*p=ptr;
+    while(*ptr!='\0')
+    {
+        i++;
+        ptr++;
+    }
+    i=i+1;
+    cout<<"the length of the string is"<<i<<" and it is "<<*p<<" whoose last element being '/0' which is not displayed"<<endl;
+    return i;
+}
+int main()
+{
+    char a[25];
+    cout<<"enter thestring"<<endl;
+    cin>>a;
+    int j=myStrLen(a);
+    cout<<j;
+    cout<<endl;
+    return 0;
+}
+  //9.
+bool contains(char* p,char c)
+{
+	while(*p!='\0')
+	{
+		if(*p==c)
+		return true;
+		p++;
+	}
+	return false;
+}
+//10.
+#include<iostream>
+using namespace std;
+void revString(char* ptr)
+{
+  // WRITE YOUR CODE HERE
+  char*nptr=ptr;
+  while(*nptr!='\0')
+  {
+      nptr++;
+  }
+  nptr--;
+  int i=0;
+  char a[10];
+  while(nptr>(ptr-1))
+  {
+      a[i]=*nptr;
+      i++;
+      nptr--;
+  }
+  cout<<a<<endl;
+}
+int main()
+{
+  char s[10] = "abcde";
+  revString(s);  // call the function
+  return 0;
+}
+
