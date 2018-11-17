@@ -4,7 +4,9 @@
 3.6940
 4. S
 5.9772
+
 2.//statement D. *p=75.
+
 3.// the error is in assigning pointer type. A character is a Special element which can be only pointed with the help of a character pointer and not with the help of a double pointer. Pointing a character with a double pointer is not well defined.
 4.// 
 A
